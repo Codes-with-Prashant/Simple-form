@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">FORM SURVEY</h1>
+<p id ="description">We appreciate you letting us know who you are. <br>
+     We don’t want to spam you in any way, the data we collect will be used only for this research.</p>
+    <div id="formcontainer">
+     <form id="survey-form" action="">
+        <label id="name-label"for="name">Name</label> <br>
+        <input type="text" placeholder="Enter Your Name"  name="Name" id="name" required> <br>
+        <label id="email-label" for="email">Email</label> <br>
+        <input type="email" placeholder="Enter Your Email"  name="Email" id="email" required > <br>
+        <label for="number" id="number-label">Age</label><br>
+        <input type="number" placeholder="Enter Your Age"  name="Age" id="number" min="18" max="35"><br>
+        <label for="dropdown">Favourite Framework</label><br> 
+        <select name="Framwork" id="dropdown">
+            <option value="React">React</option>
+            <option value="Angular">Angular</option>
+            <option value="Vue">Vue</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Tailwind">Tailwind</option>
+            <option value="Material-UI">Material-UI</option>
+        </select><br>
+        <label for="radiocheck">how much do you like his page?</label><br>
+        <input type="radio" name="radiocheck" id="good" value="good">
+        <label for="good">Very Good</label>
+        <input type="radio" name="radiocheck" id="fair" value="fair">
+        <label for="fair">Fair Enough</label>
+        <input type="radio" name="radiocheck" id="bad" value="bad">
+        <label for="bad">Bad</label> <br>
+        <div>
+            <label for="interest">Choose your interest:</label>
+            <div>
+              <input type="checkbox" id="frontend" name="interest" value="frontend">
+              <label for="frontend">Front-End</label>
+            </div>
+            <div>
+              <input type="checkbox" id="backend" name="interest" value="backend">
+              <label for="backend">Back-End</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Fstack" name="interest" value="Fstack">
+              <label for="Fstack">Full-Stack</label>
+            </div>
+        </div><br>
+        <label for="review">Review of Website:</label>
+<textarea id="review" name="review" rows="4" cols="50">
+At frecodecamp.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+        <button type="submit" id="submit">Submit form</button>
+     </form>
+ </div>
+</body>
+</html>
